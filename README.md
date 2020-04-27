@@ -6,6 +6,8 @@ ng new my-dream-app
 cd my-dream-app
 ng serve
 
+to create routing with module
+ng g module [module-name] --routing
 
 to build our application run below command
 npm i
