@@ -1,0 +1,26 @@
+/* Style the footer */
+footer {
+    background-color: #bbbcbc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1001;
+    height: 32px;
+    font-size: 12px;
+    font-family:  "OpenSans-SemiBold";
+  }
+  .footer-wrapper {
+    padding: 7px 0 0 21px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+:host ::ng-deep .navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+color:blue;
+}

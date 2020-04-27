@@ -1,1 +1,323 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+/* @import '~ngx-toastr/toastr.css';  */
+
+/* common code for all components */
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    /* src: url('./assets/fonts/opensans-regular.woff') format('woff'); */
+    font-weight: normal;
+ }
+ @font-face {    
+    font-family: 'OpenSans-SemiBold';
+    src: url('./assets/fonts/OpenSans-Semibold.ttf') format('truetype');
+    /* src: url('./assets/fonts/opensans-semibold-webfont.woff') format('woff'); */
+    font-weight: normal;
+ }
+ @font-face {    
+    font-family: 'OpenSans-Light';
+    src: url('./assets/fonts/OpenSans-Light.ttf') format('truetype');
+    /* src: url('./assets/fonts/opensans-semibold-webfont.woff') format('woff'); */
+    font-weight: normal;
+ }
+ @font-face {    
+    font-family: 'OpenSans-Bold';
+    src: url('./assets/fonts/OpenSans-Bold.ttf') format('truetype');
+    /* src: url('./assets/fonts/opensans-semibold-webfont.woff') format('woff'); */
+    font-weight: normal;
+ }
+
+ [class*=" deloitte-icon-"], [class^=deloitte-icon-] {
+   font-family: deloitte-special_font-v2;
+   font-size: 30px;
+   vertical-align: middle;
+ }
+ 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+ .noMargin
+ {
+   margin-left: 0;
+   margin-right: 0;
+ }
+ .cursorPointer
+ {
+    cursor: pointer !important;
+ }
+ .cursorDefault
+ {
+    cursor: default !important;
+ }
+ .white-color-text
+ {
+    color: #fff !important;
+ }
+ body{
+    font-family: "OpenSans-Regular";
+ }
+ .font_22
+ {
+   font-size: 22px;
+ }
+
+ .dropdown-menu:after, .dropdown-menu:before {
+   content: "";
+   width: 0;
+   height: 0;
+   position: absolute;
+}
+.dropdown-menu:before {
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-bottom: 8px solid #fff;
+}
+.dropdown-menu
+{
+   width: 100%;
+   padding: 10px 0px;
+   clear: both;
+   font-weight: 400;
+   color: #53565a;
+   border: 1px solid #d0d0ce;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+}
+.dropdown-item
+{
+   width: 100%;
+   padding: 10px 14px;
+   clear: both;
+   font-weight: 400;
+   color: #53565a !important;
+   text-decoration: none;
+}
+
+/*old css start*/
+
+.requiredAterisk {
+   color: #e44c49;
+   padding: 0 4px;
+}
+/*old css end*/
+ /* Date picker sstyles*/
+.time_period_wrapper input {
+   background: url(./assets/images/ic_calendar.svg) no-repeat 0 ;
+   background-position: 92% !important;
+   -webkit-appearance: none!important;
+   border-radius: 0px;
+   outline-width: 0;
+   width: 97%;
+   cursor: pointer;
+   padding-top: 7px!important;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.time_period_wrapper .float_right {
+   float: right;
+}
+/* The chkContainer */
+.chkContainer {
+   display: block;
+   position: relative;
+   padding-left: 25px;
+   padding-right: 15px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 13px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   font-weight: normal;
+ }
+ 
+ /* Hide the browser's default checkbox */
+ .chkContainer input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+ }
+ 
+.ui-button_type_secondary {
+   border-color: #1aa2db;
+   color: #1aa2db;
+   background-color: transparent;
+ }
+ .ui-button_size_large {
+   padding: 0 40px;
+   font-size: 14px;
+   line-height: 36px;
+   height: 40px;
+ }
+.ui-button {
+  font-size: 14px;
+  font-family: OpenSans-SemiBold !important;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+  border: 1px solid #d0d0ce;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 26px;
+  height: 30px;
+}
+ .ui-button_type_primary {
+   border-color: #00a3e0;
+   color: #fff;
+   background-color: #00a3e0;
+ }
+html, body { height: 100%; }
+ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } 
+
+.ck-editor__editable_inline {
+   min-height: 500px;
+}
+
+.datatable {
+  /*height: 300px;*/
+  height: auto;
+  overflow-y: auto;
+}
+.icon {
+   color:#00a3e0;
+   font-size: large;
+   display: block;
+}
+/* [class*="fa-"]::before,[class^=fa-]::before{
+   color: #00a1de;
+} */
+.icon-circle{
+   border: 1px solid #00a1de;
+   border-radius: 50%;
+   width: 24px;
+   height: 24px;
+   font-size: 14px;
+   line-height: 23px;
+   text-align: center;
+}
+.actionitem{
+   width: inherit;
+}
+.actionitem:hover{
+   cursor: pointer;
+}
+.icon-close-circle {    
+   border: 2px solid #cdd0d2;
+   border-radius: 50%;
+   width: 38px;
+   height: 38px;
+   font-size: 20px;
+   line-height: 30px;
+   text-align: center;
+ }
+ .div-close{
+   padding-left: 30px;
+ }
+ .popover-title .popover-header{
+    display: none;
+ }
+ .fa-check, .icon-circle {
+   color: #00a1de;
+ }
+ :host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+    display: none !important;
+ }
+ .cdk-overlay-container {
+   z-index: 999 !important;
+ }
+ .popover{
+    z-index:9999 !important;
+ }
+ .highlighedTxtColor
+ {
+   color:#86BC24;
+ }
+.bootstrap tag {
+  background: #428BCA !important;
+  border-radius: 0.18rem !important;
+  height: 36px !important;
+}
+
+.bootstrap path, .bootstrap path {
+  fill: #585858 !important;
+}
+.cdk-overlay-container{
+   z-index: 9999 !important;
+}
+bs-datepicker-container, bs-daterangepicker-container{
+   z-index:9999 !important;
+}
+.ng2-dropdown-menu
+{
+   z-index:99999 !important;
+   width: max-content !important;
+}
+.bootstrap.ng2-tag-input.ng2-tag-input--focused {
+   border: 1px solid #d0d0ce !important;
+}
+.bootstrap.ng2-tag-input.ng2-tag-input {
+   border: 1px solid #d0d0ce !important;
+}
+.clsBorderTag
+{
+  border:none;
+}
+.ng2-dropdown-menu
+{
+    border: 1px solid rgb(208, 208, 206) !important;
+}
+.bootstrap.ng2-tag-input .ng2-tags-container
+{
+   margin-left: 5px !important;
+}
+.bs-datepicker-body table td span.disabled{
+   cursor: not-allowed !important; 
+}
+.mat-checkbox-layout
+{
+   display:inline !important;
+}
+
+ .cke_path{display: none;}
+ 
+ /* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.towerspanel{
+   min-width: calc(100% + 34px) !important;
+   margin-left: 24px;
+ }
+ .btn.btn-primary, .btn.btn-secondary{
+   width: 85px !important;
+   line-height:20px !important;
+ }
+.mat-dialog-container{
+   padding: 0px !important;
+}
+#searchbox{
+   height: 26px !important;
+}
+.cke_wysiwyg_div{
+   padding: 15px !important;
+   font-weight: 400;
+   font-size: 14px;
+}

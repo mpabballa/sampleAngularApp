@@ -1,0 +1,46 @@
+<header id="header">
+    <div class="layout-center-wrapper">
+      <div class="col-md-12 px-0">
+        <div class="row noMargin container_header">
+          <div class="col-md-1 header__logo pt-2">
+            <img src="assets/images/mytech-logo.png" />
+          </div>
+          <div *ngIf="true" class="col-md-6">
+            <nav class="navbar navbar-expand-lg" id="bs-example-navbar-collapse-1">
+              <ul class="items nav navbar-nav">
+                <!-- <li  class="active"><a href="#home">home<span class="sr-only">(current)</span></a></li>
+          <li (click)="onfocus(#page1)" #page1><a href="#page1">page 1</a></li> 
+          <li><a href="#page2">page 2</a></li>
+          <li><a href="#page3">page 3</a></li> -->
+                <li *ngFor="let item of categories" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item pt-2">
+                  <a class="nav-link" routerLink="{{item.value}}"> {{ item.key }}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-5">
+            <div *ngIf="true" class="action-items">
+              <nav class="navbar navbar-expand-lg pt-3">
+                <ul class="items nav navbar-nav navbar-right">
+                  <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="white-color-text clsName nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Welcome, {{ userName}}
+                      <i class="fa fa-caret-down header__menu-icons"></i>
+                      <i class="fa fa-caret-up header__menu-icons" data-toggle="dropdown"></i>
+                    </a>
+                    <div class="dropdown-menu" #logoutDiv>
+                      <a class="dropdown-item" href="#" (click)="showLogoutConfirmationPopup(false)">
+                        <i class="fa fa-fw dropdown-menu__icon icon_color_dark"></i>Logout</a>
+                    </div>
+                  </li>
+                  <!-- <li class="nav-item"><a class="font_22 cursorDefault white-color-text nav-link">Towers</a></li> -->
+                </ul>
+              </nav>
+              <div class="pt-3 px-2"><span class="font_22 fontfamily cursorDefault white-color-text">Techie Hub</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <app-logout *ngIf="showLogoutPopup" (onHide)="onHide($event)" [isSessionTimeOut]="isSessionTimeOut"></app-logout> -->
